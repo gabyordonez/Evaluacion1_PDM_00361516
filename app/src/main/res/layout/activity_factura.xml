@@ -7,255 +7,273 @@
     android:orientation="vertical"
     tools:context=".Factura">
 
+
+    // Para el de las facturas el user, email, y total de productos vana cambiar cunado se sepa
+    cuanto es el producto. EL grid va a obtener los totales de la primera actividad.
     <TextView
         android:id="@+id/tv_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuario: " />
+        android:text="Usuario: "
+        android:textSize="@dimen/text_body"
+        android:textColor="@color/color_black"
+        android:padding="@dimen/small_gap"/>
 
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Correo: " />
+        android:text="Correo: "
+        android:textSize="@dimen/text_body"
+        android:textColor="@color/color_black"
+        android:padding="@dimen/small_gap"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total de productos: " />
+        android:text="Total de productos: "
+        android:textSize="@dimen/text_body"
+        android:textColor="@color/color_black"
+        android:padding="@dimen/small_gap"/>
 
 
-    <TextView
+    <GridLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Detalle de producto"
+        android:layout_height="0dp"
         android:layout_gravity="center"
-        android:padding="25dp"
-        android:textSize="25dp"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="20dp"
-        android:layout_gravity="center">
+        android:padding="@dimen/medium_gap"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Producto 1 " />
-
-            <TextView
-                android:id="@+id/tv_contador1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="#" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Producto 1 " />
-
-            <TextView
-                android:id="@+id/tv_contador2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="#" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Producto 1 " />
-
-            <TextView
-                android:id="@+id/tv_contador3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="#" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:padding="20dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Producto 1 " />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="#"
-                android:id="@+id/tv_contador4"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Producto 1 " />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="#"
-                android:id="@+id/tv_contador5"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Producto 1 " />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="#"
-                android:id="@+id/tv_contador6"/>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:padding="20dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Producto 1 " />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="#"
-                android:id="@+id/tv_contador7"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Producto 1 " />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="#"
-                android:id="@+id/tv_contador8"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
+            android:layout_marginRight="@dimen/medium_gap"
+            android:layout_marginBottom="@dimen/medium_gap"
+            android:background="@color/background_color_red"
             android:orientation="vertical"
-            >
+            android:padding="@dimen/medium_gap">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 1 " />
+                android:text="@string/text_producto_1"
+                android:textColor="@color/color_white" />
 
             <TextView
+                android:id="@+id/tv_display_p1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="#"
-                android:id="@+id/tv_contador9"/>
+                android:text="@string/texto_base"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_contador" />
 
         </LinearLayout>
-    </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/medium_gap"
+            android:background="@color/background_color_aqua"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_gap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_producto_2"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_display_p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto_base"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_contador" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color_blue"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_gap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_producto_3"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_display_p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto_base"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_contador" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_gap"
+            android:background="@color/background_color_cyan"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_gap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_producto_4"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_display_p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto_base"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_contador" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color_green"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_gap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_producto_5"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_display_p5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto_base"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_contador" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color_lila"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_gap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_producto_6"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_display_p6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto_base"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_contador" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color_pink"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_gap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_producto_7"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_display_p7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto_base"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_contador" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color_purple"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_gap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_producto_8"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_display_p8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto_base"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_contador" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color_yellow"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_gap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_producto_9"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tv_display_p9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto_base"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_contador" />
+
+        </LinearLayout>
+
+    </GridLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Share"
         android:layout_gravity="center"
-        android:id="@+id/bt_share"/>
+        android:id="@+id/bt_share"
+        android:paddingBottom="@dimen/small_gap"/>
 
 </LinearLayout>

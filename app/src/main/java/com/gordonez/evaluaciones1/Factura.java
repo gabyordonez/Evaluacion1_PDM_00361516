@@ -10,8 +10,9 @@ import android.widget.Toast;
 public class Factura extends AppCompatActivity {
 
     private TextView tUser, tCorreo;
-    private Button bShare;
 
+    /*La segunda actividad recibe el intent. si el objeto de intent es distinto a null, se mandaria
+     la informacion, y se mostraria por medio de un toast.  */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
